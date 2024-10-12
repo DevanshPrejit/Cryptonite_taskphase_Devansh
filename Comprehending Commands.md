@@ -59,3 +59,7 @@ find / -name flag
 ```
 Found multiple files having name 'flag'. Accessed all of them using `cat` and found out the correct one.<br><br>
 ![image](https://github.com/user-attachments/assets/a0b7e081-6c82-41e9-a455-68258e7b360a)
+
+# Linking files
+Leanrt that there are 2 types of links, hard links and soft/symbolic links. Learnt the use of symbolic links made by command `ln -s <target-file> <pointing-file>`.<br><br>
+![image](https://github.com/user-attachments/assets/48e8adb1-340c-4638-9d42-e5f111edd6da)
