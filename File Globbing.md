@@ -17,4 +17,11 @@ Learnt that `[]` can also be used to glob path arguements also.<br><br>
 ![image](https://github.com/user-attachments/assets/52feaf1c-4855-4b7e-b021-1ce3275eb20d)<br><br>
 ![image](https://github.com/user-attachments/assets/f4ae4f2f-cb72-49da-b51d-578fe6e177fa)
 
-# 
+# Mixing globs
+Used `[cep]*` because the `[]` identifies the starting letters of the words and `*` automatically matches the rest of the letters of each word.<br><br>
+
+![image](https://github.com/user-attachments/assets/d1ce4afc-6f11-42a5-b6be-03caeee10163)
+
+# Exclusionary globbing 
+Learnt that `!` and `^` can be used inside `[]` to exclude all files starting with letters which are in the `[]`.<br><br>
+![image](https://github.com/user-attachments/assets/1c92d036-cb16-4840-a0a9-522e15bbaec3)
