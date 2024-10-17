@@ -37,10 +37,12 @@ The `tee` command, named after a "T-splitter" from plumbing pipes, duplicates da
 ![image](https://github.com/user-attachments/assets/77d57738-1115-4c51-8307-adcc3b3aa00f)
 
 # Writing to multiple programs
-Leanrt about the ***Process Substitution*** method which is used to  feed the output of a process (or processes) into the stdin of another process.<br>
+Learnt about the ***Process Substitution*** method which is used to  feed the output of a process (or processes) into the stdin of another process.<br>
 ***SYNTAX***
 ```
 >(command)
 ```
 ![image](https://github.com/user-attachments/assets/4ead0460-72a1-4f68-a9db-9c6b571d4380)
 
+# Split-piping stderr and stdout
+![image](https://github.com/user-attachments/assets/116be2ea-9e1c-4a0a-8393-ff6253b5118e)
