@@ -6,7 +6,7 @@ Executing the command in the shell, we get the flag!<br><br>
 ![image](https://github.com/user-attachments/assets/2bc5d12a-1d6d-4d72-86eb-f357d78f4a18)
 
 # Learning Complex usage
-Learnt that that arguements of certain commands can have arguements for themselves.<br><br>
+Learnt that arguements of certain commands can have arguements for themselves.<br><br>
 The challenge provides a same type of command .<br><br>
 ![image](https://github.com/user-attachments/assets/7fbcdc06-d6b8-4979-a68f-2b405fccb7d8)
 
