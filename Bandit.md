@@ -43,4 +43,21 @@ Used the command `ssh bandit0@bandit.labs.overthewire.org -p 2220` and pass : **
  ![image](https://github.com/user-attachments/assets/8c5a1b1e-15d1-4d13-995c-ef004bc5af2f)
  - used `ssh bandit8@bandit.labs.overthewire.org -p 2220` with pass: **dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc**
 # Level 8->9
+ - next pass jumbled along with lot of other garbage stuff and is the only line of text that occurs only once, so I used `uniq`.
+ - The uniq -u command in Linux is used to display only unique lines from a file or input, but it works only on adjacent duplicate lines. Therefore, to ensure that all duplicates are grouped together, the input must be sorted before using uniq -u.
+ - ![image](https://github.com/user-attachments/assets/7b854b1d-4113-449a-a0e4-fa55fc4fbb2a)
+ - used `ssh bandit9@bandit.labs.overthewire.org -p 2220` with pass: **4CKMh1JI91bUIZZPXDqGanal4xvAg0JM**
+# Level 9->10
+ - next pass hidden in file ***data.txt*** which is the only human-readable string, and is preceded by `=`.
+ - human-readable data can be filtered out by using `strings <file>`.
+ - to find strings preceded by `=`, we can use `grep`.
+ - ![image](https://github.com/user-attachments/assets/d8af7af0-2109-4462-bae0-f47b33f279dc)
+ -  used `ssh bandit10@bandit.labs.overthewire.org -p 2220` with pass: **FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey**
+# Level 10->11
+ - next pass was encoded in ***Base64***.
+ - used ***Base64*** decoder to crack the password.
+ - ![image](https://github.com/user-attachments/assets/b1875b72-21b7-4c63-b49e-509c611ed17a)
+ -  used `ssh bandit11@bandit.labs.overthewire.org -p 2220` with pass: **dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr**
+# Level 11->12
  - 
+
