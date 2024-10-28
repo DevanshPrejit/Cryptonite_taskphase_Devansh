@@ -59,5 +59,29 @@ Used the command `ssh bandit0@bandit.labs.overthewire.org -p 2220` and pass : **
  - ![image](https://github.com/user-attachments/assets/b1875b72-21b7-4c63-b49e-509c611ed17a)
  -  used `ssh bandit11@bandit.labs.overthewire.org -p 2220` with pass: **dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr**
 # Level 11->12
+ - next pass was encoded in **ROT13**
+ - used **ROT13** decoder to crack the password.
+ - ![image](https://github.com/user-attachments/assets/c530aa72-3568-42f3-b4a0-91549897abea)
+ - used `ssh bandit12@bandit.labs.overthewire.org -p 2220` with pass: **7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4**
+# Level 12->13
+ - The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.
+ - Made a temp directory using `mktemp -d` and copied data.txt to it.
+ - used `mv <original-name> <final-name>` to rename the file.<br><br>
+ ![image](https://github.com/user-attachments/assets/4556787e-3b5d-4792-a706-368acd8c0edf)
+ - Since the file was a hexdump, so I used `xxd -r <file>` to reverse the hexdump and get the original file.
+ - Then used `file` to find the type in which the file was compressed.<br><br>
+ ![image](https://github.com/user-attachments/assets/3818172e-a5c1-4374-93d1-cd9b097cea47)
+ - file was compressed by `gzip`. Changed the file extension to `.gz` and decompressed it using `gzip -d <file>`.<br><br>
+ ![image](https://github.com/user-attachments/assets/86d33002-ca49-4a6f-80e7-dba1254cf3b8)
+ - used `file` to check the compression type again. Found out it was `bzip2` compressed.
+ - repeated the same process as for `gzip`.
+ - next file was a `tar` archived file. Used `tar -xf <file>` to extract the files.<br><br>
+ ![image](https://github.com/user-attachments/assets/f093e243-b7ed-41dd-8bef-229c8db16b54)
+ - `bata5.bin` was again a `tar` file, so i repeated the process.
+ - Continued the previous steps to finally get the password.
+ - used `ssh bandit13@bandit.labs.overthewire.org -p 2220` with pass: **FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn**
+# Level 13->14
  - 
+
+
 
